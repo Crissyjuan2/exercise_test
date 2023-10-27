@@ -1,0 +1,50 @@
+#Html de una calculadora de 2 numeros
+<!DocType html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora</title>
+</head>
+<body>
+    <h1>Calculadora</h1>
+    <h2>Menú Principal</h2>
+    <ul>
+        <li>1. Sumar</li>
+        <li>2. Restar</li>
+        <li>3. Multiplicar</li>
+        <li>4. Dividir</li>
+        <li>5. Salir</li>
+    </ul>
+    <h2>Ingrese una opción:</h2>
+    <input type="text" id="opcion">
+    <h2>Ingrese el primer número:</h2>
+    <input type="text" id="numero1">
+    <h2>Ingrese el segundo número:</h2>
+    <input type="text" id="numero2">
+    <button id="boton">Aceptar</button>
+    <script src="calculadora.js"></script>
+</body>
+</html>
+#ahora como seria el py de esa calculadora con clases
+class calculadora:
+    def __init__(self,numero1,numero2):
+        self.numero1=numero1
+        self.numero2=numero2
+    def sumar(self):
+        return self.numero1+self.numero2
+    def restar(self):
+        return self.numero1-self.numero2
+    def multiplicar(self):
+        return self.numero1*self.numero2
+    def dividir(self):
+        return self.numero1/self.numero2
+#ahora el py de la calculadora con funciones
+def sumar(numero1,numero2):
+    return numero1+numero2
+def restar(numero1,numero2):
+    return numero1-numero2
+def multiplicar(numero1,numero2):
+    return numero1*numero2
+def dividir(numero1,numero2):
+    return numero1/numero2
+#ahora el py de la calculadora con funciones y clases
